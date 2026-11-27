@@ -1,0 +1,31 @@
+name: Product or documentation issue
+description: Report a non-sensitive defect, documentation error or inconsistent result.
+title: "[Issue]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For sensitive security issues, follow SECURITY.md instead of opening a public issue.
+  - type: input
+    id: location
+    attributes:
+      label: Affected file, tool or research note
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and observed behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps and evidence
+      description: Include the exact version or commit, commands and relevant output.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested correction (optional)

@@ -1,0 +1,61 @@
+name: Reproduction report
+description: Report a successful reproduction, discrepancy or failed check.
+title: "[Reproduction]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for checking our work. Negative results are welcome.
+        Do not include secrets, personal data or sensitive vulnerability details.
+  - type: input
+    id: project
+    attributes:
+      label: Research project or tool
+      description: Link to the relevant research note or tool.
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Repository commit
+      description: Output of git rev-parse HEAD.
+    validations:
+      required: true
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Verification boundary
+      options:
+        - Published receipt check
+        - Fresh execution of supplied code
+        - Independent reimplementation
+        - Other or uncertain
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, hardware, language and library versions.
+    validations:
+      required: true
+  - type: textarea
+    id: procedure
+    attributes:
+      label: Exact reproduction procedure
+      description: Commands, inputs, settings and any modifications.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and observed results
+      description: Include exit status, raw output and timing boundaries if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Limitations and interpretation
+      description: What does this check establish, and what remains unverified?
