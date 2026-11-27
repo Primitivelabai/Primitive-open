@@ -2,8 +2,6 @@
   <img src="assets/primitive-open-banner.jpg" alt="Primitive Open: research worth checking. Mathematics, computation and evidence." width="100%">
 </p>
 
-<h1 align="center">Primitive Open</h1>
-
 <p align="center">
   Open research, reproducible experiments and practical tools from Primitive Labs, Australia.
 </p>
@@ -23,7 +21,7 @@
 
 ---
 
-## What we are building
+## What we're building
 
 Primitive Open is the public home for selected research and tools from Primitive Labs. We investigate ways to represent, verify and compute information more efficiently, and publish the evidence needed to understand what a result does and does not establish.
 
@@ -42,9 +40,9 @@ Primitive Open is the public home for selected research and tools from Primitive
 
 <table>
 <tr>
-<td width="33%" valign="top"><h3>59,049 → 66</h3><b>Amplitudes</b><p>Weighted quotient representation for a synthetic symmetric 10-trit Hamiltonian. The recorded warm-kernel comparison is 325.33× against a full tensor implementation, excluding setup and I/O.</p><a href="research/ohio-weighted-quotients-2026-11-17/README.md">Read the scope and limits</a></td>
-<td width="33%" valign="top"><h3>22 / 22</h3><b>Known planet recoveries</b><p>Round 3 pooled and dense searches recovered the same 22 previously catalogued planets on 103 eligible Kepler targets. The pooled measured search stage used 8.39× less summed per-target time.</p><a href="research/ohia-sky/round-3/README.md">Read the experiment</a></td>
-<td width="33%" valign="top"><h3>7 checksums</h3><b>Hardware reference fixture</b><p>A dependency-free scalar replay for checking synthetic CPU outputs. It is not an optimized GPU benchmark or a claim of independent replication.</p><a href="research/hardware-verification-2026-11-19/README.md">Run the fixture</a></td>
+<td width="33%" valign="top"><img src="assets/cards/amplitudes.svg" width="100%" alt=""><p>Weighted quotient representation for a synthetic symmetric 10-trit Hamiltonian. The recorded warm-kernel comparison is 325.33× against a full tensor implementation, excluding setup and I/O.</p><a href="research/ohio-weighted-quotients-2026-11-17/README.md">Read the scope and limits</a></td>
+<td width="33%" valign="top"><img src="assets/cards/planets.svg" width="100%" alt=""><p>Round 3 pooled and dense searches recovered the same 22 previously catalogued planets on 103 eligible Kepler targets. The pooled measured search stage used 8.39× less summed per-target time.</p><a href="research/ohia-sky/round-3/README.md">Read the experiment</a></td>
+<td width="33%" valign="top"><img src="assets/cards/hardware.svg" width="100%" alt=""><p>A dependency-free scalar replay for checking synthetic CPU outputs. It is not an optimized GPU benchmark or a claim of independent replication.</p><a href="research/hardware-verification-2026-11-19/README.md">Run the fixture</a></td>
 </tr>
 </table>
 
@@ -79,7 +77,7 @@ For the weighted quotient numerical experiment and Lean checks, use the dependen
 
 ## Skills and tools
 
-This repository is also intended to house portable agent skills and small tools. The product assurance skill collection and its evaluation suite are in preparation for publication; they are not listed as installable until their actual source and instructions are available here.
+This repository will also hold portable agent skills and small tools. The first collection, **agent craft**, is in review. Its skills are listed as installable only once their source, instructions and evaluation results are published here.
 
 We will distinguish harness validation, model-level comparisons and native agent execution. We will not use a passing unit test as evidence that a skill improves model performance.
 
