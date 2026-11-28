@@ -77,6 +77,8 @@ For the weighted quotient numerical experiment and Lean checks, use the dependen
 
 ## Skills and tools
 
+<p align="center"><a href="agent-craft"><img src="agent-craft/assets/hero.png" alt="Two punnets: 23/63 runs dodged the trap without agent craft, 60/63 with it" width="100%"></a></p>
+
 **[agent craft](agent-craft)** is seven skills that stop AI agents making the mistakes that cost you: fake "done", skipped gates, leaky retrieval, untested UI, bad sums and briefs that can't be met.
 
 ```
