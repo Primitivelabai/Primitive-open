@@ -37,7 +37,7 @@ A proposal claims 96% savings. Two of its multiplications are wrong, one by a fa
 
 ## The results
 
-We test skills the way we'd test code: an A/B against the same model with no skill, judged blind.
+We test skills the way we'd test code: an A/B against the same model with no skill, judged blind. This is a model-level comparison, with the skill given in the prompt. A native agent bench, where the agent must load the skill itself and use real tools, comes next.
 
 - **Models:** GLM 5.3 Flash, DeepSeek V4.1 Flash and Claude Haiku 5.5, via OpenRouter.
 - **Judges:** two different models score every answer against fixed criteria. A criterion only counts if **both** agree.
