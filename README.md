@@ -77,15 +77,15 @@ For the weighted quotient numerical experiment and Lean checks, use the dependen
 
 ## Skills and tools
 
-<p align="center"><a href="agent-craft"><img src="agent-craft/assets/hero.png" alt="Two punnets: 23/63 runs dodged the trap without agent craft, 60/63 with it" width="100%"></a></p>
+<p align="center"><a href="agentproof"><img src="agentproof/assets/hero.png" alt="Two punnets: 23/63 runs dodged the trap without agent proof, 60/63 with it" width="100%"></a></p>
 
-**[agent craft](agent-craft)** is seven skills that stop AI agents making the mistakes that cost you: fake "done", skipped gates, leaky retrieval, untested UI, bad sums and briefs that can't be met.
+**[agent proof](agentproof)** is seven skills that stop AI agents making the mistakes that cost you: fake "done", skipped gates, leaky retrieval, untested UI, bad sums and briefs that can't be met.
 
 ```
 npx skills add Primitivelabai/Primitive-open
 ```
 
-On the trap bench, runs that dodged the trap went from 23/63 without the skills to 60/63 with them. That is a model-level comparison: each skill is given to the model in its prompt, and two blind judges score the answer. Native agent execution, where an agent must load the skill itself and act with real tools, is the next bench. Every case, answer and score is published in [agent-craft/bench](agent-craft/bench).
+On the trap bench, runs that dodged the trap went from 23/63 without the skills to 60/63 with them. That is a model-level comparison: each skill is given to the model in its prompt, and two blind judges score the answer. Native agent execution, where an agent must load the skill itself and act with real tools, is the next bench. Every case, answer and score is published in [agentproof/bench](agentproof/bench).
 
 ## Help us improve the evidence
 

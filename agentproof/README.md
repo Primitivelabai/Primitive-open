@@ -1,10 +1,10 @@
-# agent craft
+# agent proof
 
 **Seven skills that stop AI agents making the mistakes that cost you.**
 
 Agents are fast and confident. That's the problem. They say "done" when CI ran zero tests. They ship at 16:59 because someone said hurry. They pass a QA check they never ran. They believe the sums in your spreadsheet.
 
-agent craft is seven short skills, each aimed at one of those failures. One command installs them into Claude Code, Codex, Cursor or any agent that reads `SKILL.md` folders.
+agent proof is seven short skills, each aimed at one of those failures. One command installs them into Claude Code, Codex, Cursor or any agent that reads `SKILL.md` folders.
 
 ![Two punnets: 23/63 runs dodged the trap without the skill, 60/63 with it](assets/hero.png)
 

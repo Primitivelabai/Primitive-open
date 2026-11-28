@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// agent craft A/B: each case answered with and without the skill, across models, judged blind.
+// agent proof A/B: each case answered with and without the skill, across models, judged blind.
 // Usage: OPENROUTER_API_KEY=... AB_BUDGET_USD=6 node ab.mjs [runs=3]
 import { readFileSync, appendFileSync, existsSync } from "node:fs";
 import { homedir } from "node:os";
