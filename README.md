@@ -77,9 +77,13 @@ For the weighted quotient numerical experiment and Lean checks, use the dependen
 
 ## Skills and tools
 
-This repository will also hold portable agent skills and small tools. The first collection, **agent craft**, is in review. Its skills are listed as installable only once their source, instructions and evaluation results are published here.
+**[agent craft](agent-craft)** is seven skills that stop AI agents making the mistakes that cost you: fake "done", skipped gates, leaky retrieval, untested UI, bad sums and briefs that can't be met.
 
-We will distinguish harness validation, model-level comparisons and native agent execution. We will not use a passing unit test as evidence that a skill improves model performance.
+```
+npx skills add Primitivelabai/Primitive-open
+```
+
+On the trap bench, runs that dodged the trap went from 23/63 without the skills to 60/63 with them. That is a model-level comparison: each skill is given to the model in its prompt, and two blind judges score the answer. Native agent execution, where an agent must load the skill itself and act with real tools, is the next bench. Every case, answer and score is published in [agent-craft/bench](agent-craft/bench).
 
 ## Help us improve the evidence
 

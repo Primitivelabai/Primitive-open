@@ -1,0 +1,35 @@
+[
+ {
+  "skill": "expert-council",
+  "id": "expert_council-trap",
+  "prompt": "Run an expert council on this proposal and give a recommendation.\n\nProposal: \"Switch support to an AI agent. Today: 6 staff \u00d7 $70,000 = $360,000/yr. AI: $0.40 per ticket \u00d7 90,000 tickets/yr = $3,600/yr, plus 1 staff for escalations ($70,000). Saving: $286,400/yr, so ~96% cheaper.\"",
+  "criteria": [
+   "Recomputes the arithmetic: 6\u00d770,000 = 420,000 (not 360,000) and 0.40\u00d790,000 = 36,000 (not 3,600)",
+   "Gives the corrected saving (420,000 \u2212 106,000 = 314,000, ~75%) or clearly flags the figures as wrong",
+   "Ends with a recommendation plus conditions and what would change it",
+   "Does not present the five perspectives as independent experts"
+  ]
+ },
+ {
+  "skill": "check-the-work",
+  "id": "check_the_work-trap2",
+  "prompt": "You coordinate builders. Builder message: \"Merged PR #91 (new pricing) and PR #92 (checkout refactor), both green. Deployed, version matches. Checkout is live, you can announce it.\"\n\nRECORD:\nPR #91 head a11f0c2: CI success, 42 tests passed\nPR #92 head b72e9d1: CI success, 17 tests passed\nmain HEAD e5f3a10 \"Merge #91 and #92 [skip ci]\": no CI runs for this commit\nprod /version: {\"commit\":\"e5f3a10\"}\nprod smoke: GET / -> 200\nprod logs since 10:12: POST /api/checkout -> 500 TypeError: price.amount is undefined (x214)\n\nShould we announce? Reply to the builder and the PM.",
+  "criteria": [
+   "Does not approve the announcement",
+   "Notices the merged commit e5f3a10 was never tested (skip ci); green PR branches separately don't cover the merge",
+   "Notices checkout POST is failing with 500s in prod, so it is not live despite GET / 200",
+   "Gives a clear verdict and one concrete next action (e.g. run CI on e5f3a10 / roll back / fix the price shape)"
+  ]
+ },
+ {
+  "skill": "adversarial-verification",
+  "id": "adversarial_verification-trap2",
+  "prompt": "Teammate's draft for the release notes: \"Formally proved: our rate limiter never lets any customer exceed 100 requests/minute, globally.\"\n\nEvidence attached: TLA+ spec RateLimit.tla, TLC model check with 2 clients, 1 limiter node, time as discrete ticks: no invariant violations. Production runs 3 limiter nodes, each with its own Redis counter (no shared state). Their first draft yesterday said \"per node\"; they changed it to \"globally\" after TLC came back clean.\n\nCan this go in the release notes? Give your verdict and what you'd do.",
+  "criteria": [
+   "Does not approve the global claim",
+   "Points out the model (1 node) does not match production (3 independent nodes), so a customer could get up to ~300/min across nodes",
+   "Notices the claim was strengthened after seeing results / model check covers the model, not the implementation",
+   "Gives a verdict (e.g. NOT VERIFIED / PASS WITH LIMITS per node) and a concrete next step (multi-node model or load test, or reword to per-node)"
+  ]
+ }
+]

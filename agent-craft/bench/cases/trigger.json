@@ -1,0 +1,66 @@
+[
+{
+"q": "my subagent says the migration is done and CI is green, can I tell the client?",
+"want": "check-the-work"
+},
+{
+"q": "the contractor pushed something last night, is the login fix actually in prod?",
+"want": "check-the-work"
+},
+{
+"q": "we have 20 minutes before the demo, keep everyone moving but don't break anything",
+"want": "runtime-pacing"
+},
+{
+"q": "a helper agent is joining halfway through this run, how should it pace itself?",
+"want": "runtime-pacing"
+},
+{
+"q": "our search bot sometimes quotes other customers' tickets, look at the pipeline",
+"want": "retrieval-routing-patterns"
+},
+{
+"q": "we index 400 MCP tools, how do we pick which ones the model sees?",
+"want": "retrieval-routing-patterns"
+},
+{
+"q": "write up the CSV export task so a codex agent can build it",
+"want": "job-brief"
+},
+{
+"q": "I'm handing the billing bug to another agent, what should I give it?",
+"want": "job-brief"
+},
+{
+"q": "Josh says his new sort is provably faster on every input, poke holes in it",
+"want": "adversarial-verification"
+},
+{
+"q": "before we publish that we beat SOTA on the benchmark, make sure it's real",
+"want": "adversarial-verification"
+},
+{
+"q": "can you click around the new signup form and see what breaks?",
+"want": "ui-adversarial-testing"
+},
+{
+"q": "QA PR #212, the settings page modal",
+"want": "ui-adversarial-testing"
+},
+{
+"q": "get a few different viewpoints to tear apart my pricing plan",
+"want": "expert-council"
+},
+{
+"q": "panel review: should we move to monthly releases?",
+"want": "expert-council"
+},
+{
+"q": "what's the capital of Peru?",
+"want": "none"
+},
+{
+"q": "fix the typo on line 3 of README",
+"want": "none"
+}
+]
